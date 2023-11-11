@@ -48,7 +48,7 @@ data "aws_ami" "latest-amazon-linux" {
 //Create key pair with system ssh key
 resource "aws_key_pair" "terra-key" {
   key_name = "terra-key"
-  public_key = var.public_key //Or = file(var.public_key). This is applicable if you used path in tfvars.
+  public_key = file(var.public_key) // Use var.public_key if you pasted the key values directly in tfvars.
 }
 
 //Create an EC2 instance
