@@ -46,7 +46,7 @@ This project involves using terraform to provision the following infrastructure 
 
 2. Inside the working folder/directory in terminal, do `terraform init`
 
-![init]()
+![init](https://github.com/uedwinc/Terraform-for-InfrastructureAsCode-on-AWS/blob/main/images/init.png)
 
     - This creates a `.terraform` directory and a `.terraform.lock.hcl` file
 
@@ -54,7 +54,7 @@ This project involves using terraform to provision the following infrastructure 
 
 1. Do `terraform plan` to validate
 
-![plan]()
+![plan](https://github.com/uedwinc/Terraform-for-InfrastructureAsCode-on-AWS/blob/main/images/plan.png)
 
 2. Do `terraform apply -auto-approve` to create
 
@@ -62,27 +62,27 @@ This project involves using terraform to provision the following infrastructure 
 
     - It will also create a `terraform.tfstate` file in the working directory
 
-![complete]()
+![complete](https://github.com/uedwinc/Terraform-for-InfrastructureAsCode-on-AWS/blob/main/images/complete.png)
 
-![terra vpc]()
+![terra vpc](https://github.com/uedwinc/Terraform-for-InfrastructureAsCode-on-AWS/blob/main/images/terra%20vpc.png)
 
-![terra subnet]()
+![terra subnet](https://github.com/uedwinc/Terraform-for-InfrastructureAsCode-on-AWS/blob/main/images/terra%20subnet.png)
 
-![route table]()
+![route table](https://github.com/uedwinc/Terraform-for-InfrastructureAsCode-on-AWS/blob/main/images/route%20table.png)
 
-![internet gate]()
+![internet gate](https://github.com/uedwinc/Terraform-for-InfrastructureAsCode-on-AWS/blob/main/images/internet%20gate.png)
 
-![terra instance]()
+![terra instance](https://github.com/uedwinc/Terraform-for-InfrastructureAsCode-on-AWS/blob/main/images/terra%20instance.png)
 
 3. Confirm Nginx running on browser as provisioned in user-data
 
-![nginx]()
+![nginx](https://github.com/uedwinc/Terraform-for-InfrastructureAsCode-on-AWS/blob/main/images/nginx.png)
 
 4. Applying more resources or modifying will create a `terraform.tfstate.backup` file in the working directory to hold the previous state values
 
 5. `terraform state list` will show all resources in that state
 
-![state list]()
+![state list](https://github.com/uedwinc/Terraform-for-InfrastructureAsCode-on-AWS/blob/main/images/state%20list.png)
 
 6. `terraform state show aws_vpc.terra_vpc`
 
@@ -95,7 +95,7 @@ This project involves using terraform to provision the following infrastructure 
     terraform destroy -auto-approve
     ```
 
-![destroy]()
+![destroy](https://github.com/uedwinc/Terraform-for-InfrastructureAsCode-on-AWS/blob/main/images/destroy.png)
 
 
 ## N.B.
@@ -104,12 +104,12 @@ This project involves using terraform to provision the following infrastructure 
 
 Workspaces isolate files and resources
 
-- `terraform workspace show` to show current workspace
+    - `terraform workspace show` to show current workspace
 
-- `terraform worspace list` to see all workspaces
+    - `terraform worspace list` to see all workspaces
 
-- `terraform workspace new name-of-new-workspace` to create a new workspace
+    - `terraform workspace new name-of-new-workspace` to create a new workspace
 
-- `terraform workspace select name-of-workspace` to switch between workspaces
+    - `terraform workspace select name-of-workspace` to switch between workspaces
 
-- `terraform worspace delete name-of-workspace` to delete a workspace
+    - `terraform worspace delete name-of-workspace` to delete a workspace
