@@ -46,11 +46,15 @@ This project involves using terraform to provision the following infrastructure 
 
 2. Inside the working folder/directory in terminal, do `terraform init`
 
+![init]()
+
     - This creates a `.terraform` directory and a `.terraform.lock.hcl` file
 
 ## Provision Infrastructure
 
 1. Do `terraform plan` to validate
+
+![plan]()
 
 2. Do `terraform apply -auto-approve` to create
 
@@ -58,20 +62,41 @@ This project involves using terraform to provision the following infrastructure 
 
     - It will also create a `terraform.tfstate` file in the working directory
 
-3. Applying more resources or modifying will create a `terraform.tfstate.backup` file in the working directory to hold the previous state values
+![complete]()
 
-4. `terraform state list` will show all resources in that state
+![terra vpc]()
 
-5. `terraform state show aws_vpc.terra_vpc`
+![terra subnet]()
+
+![route table]()
+
+![internet gate]()
+
+![terra instance]()
+
+3. Confirm Nginx running on browser as provisioned in user-data
+
+![nginx]()
+
+4. Applying more resources or modifying will create a `terraform.tfstate.backup` file in the working directory to hold the previous state values
+
+5. `terraform state list` will show all resources in that state
+
+![state list]()
+
+6. `terraform state show aws_vpc.terra_vpc`
 
     - This will show all the properties of the vpc named 'terra_vpc'
 
     - You can also find these in the tfstate file
 
-6. To destroy all resources
+7. To destroy all resources
     ```
     terraform destroy -auto-approve
     ```
+
+![destroy]()
+
 
 ## N.B.
 

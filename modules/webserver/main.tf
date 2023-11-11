@@ -26,7 +26,7 @@ resource "aws_security_group" "terra-sg" {
     from_port = 0
     to_port = 0
     protocol = "-1" //-1 in protocol definition means all traffic
-    cidr_blocks = [var.var.default_route]
+    cidr_blocks = [var.default_route]
     ipv6_cidr_blocks = []
     prefix_list_ids = []
   }
