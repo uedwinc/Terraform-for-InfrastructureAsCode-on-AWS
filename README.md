@@ -48,7 +48,7 @@ This project involves using terraform to provision the following infrastructure 
 
 ![init](https://github.com/uedwinc/Terraform-for-InfrastructureAsCode-on-AWS/blob/main/images/init.png)
 
-    - This creates a `.terraform` directory and a `.terraform.lock.hcl` file
+- This creates a `.terraform` directory and a `.terraform.lock.hcl` file
 
 ## Provision Infrastructure
 
@@ -104,12 +104,12 @@ This project involves using terraform to provision the following infrastructure 
 
 Workspaces isolate files and resources
 
-    - `terraform workspace show` to show current workspace
+- To show current workspace: `terraform workspace show` 
 
-    - `terraform worspace list` to see all workspaces
+- To see all workspaces: `terraform worspace list`
 
-    - `terraform workspace new name-of-new-workspace` to create a new workspace
+- To create a new workspace: `terraform workspace new name-of-new-workspace`
 
-    - `terraform workspace select name-of-workspace` to switch between workspaces
+- To switch between workspaces: `terraform workspace select name-of-workspace`
 
-    - `terraform worspace delete name-of-workspace` to delete a workspace
+- To delete a workspace: `terraform worspace delete name-of-workspace`
